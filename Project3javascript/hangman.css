@@ -1,0 +1,124 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+/* Global Styles */
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Gallows */
+#gallows {
+  margin: 2rem 0;
+}
+
+#hangmanImage {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+#hangmanImage:hover {
+  transform: scale(1.1);
+}
+
+/* Word */
+#word {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin: 2rem 0;
+}
+
+/* Controls */
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#guessBox {
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  box-shadow: 0 0 0 2px #f3f3f3;
+}
+
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #222;
+  transform: scale(1.1);
+}
+
+#newGameButton {
+  margin-left: 1rem;
+}
+
+/* Guesses */
+#guesses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.guess {
+  display: inline-block;
+  background-color: #f3f3f3;
+  color: #333;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.guess:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+}
